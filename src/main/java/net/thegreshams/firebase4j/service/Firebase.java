@@ -1,4 +1,4 @@
-package net.thegreshams.firebase4j.service;
+package main.java.net.thegreshams.firebase4j.service;
 
 import java.io.BufferedReader;
 import java.io.InputStream;
@@ -13,10 +13,10 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-import net.thegreshams.firebase4j.error.FirebaseException;
-import net.thegreshams.firebase4j.error.JacksonUtilityException;
-import net.thegreshams.firebase4j.model.FirebaseResponse;
-import net.thegreshams.firebase4j.util.JacksonUtility;
+import main.java.net.thegreshams.firebase4j.error.FirebaseException;
+import main.java.net.thegreshams.firebase4j.error.JacksonUtilityException;
+import main.java.net.thegreshams.firebase4j.model.FirebaseResponse;
+import main.java.net.thegreshams.firebase4j.util.JacksonUtility;
 
 import org.apache.http.HttpEntity;
 import org.apache.http.HttpResponse;

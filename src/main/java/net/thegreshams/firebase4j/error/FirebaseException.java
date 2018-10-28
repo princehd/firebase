@@ -1,4 +1,4 @@
-package net.thegreshams.firebase4j.error;
+package main.java.net.thegreshams.firebase4j.error;
 
 import org.apache.log4j.Logger;
 

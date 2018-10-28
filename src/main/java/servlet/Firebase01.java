@@ -1,4 +1,4 @@
-package servlet;
+package main.java.servlet;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -6,17 +6,18 @@ import java.io.UnsupportedEncodingException;
 import java.util.Map;
 
 import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import net.thegreshams.firebase4j.error.FirebaseException;
-import net.thegreshams.firebase4j.error.JacksonUtilityException;
-import net.thegreshams.firebase4j.model.FirebaseResponse;
-import net.thegreshams.firebase4j.service.Firebase;
-import net.thegreshams.firebase4j.util.JacksonUtility;
+import main.java.net.thegreshams.firebase4j.error.FirebaseException;
+import main.java.net.thegreshams.firebase4j.error.JacksonUtilityException;
+import main.java.net.thegreshams.firebase4j.model.FirebaseResponse;
+import main.java.net.thegreshams.firebase4j.service.Firebase;
+import main.java.net.thegreshams.firebase4j.util.JacksonUtility;
 
-
+@WebServlet("/Firebase01/*")
 public class Firebase01 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private Firebase firebase;
@@ -40,7 +41,7 @@ public class Firebase01 extends HttpServlet {
 	}
 
 	private void setting(HttpServletRequest request) throws UnsupportedEncodingException {
-		contextPathTeam01 = request.getContextPath()+"/FirebaseTeam01";
+		contextPathTeam01 = request.getContextPath()+"/Firebase01";
 		reqURI = request.getRequestURI().substring(contextPathTeam01.length()+1);
 		System.out.println(reqURI);
 		
