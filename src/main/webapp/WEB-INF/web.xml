@@ -10,8 +10,68 @@
   	<description></description>
   	<servlet-class>servlet.Firebase01</servlet-class>
   </servlet>
+  <servlet>
+  	<servlet-name>Firebase02</servlet-name>
+  	<display-name>Firebase02</display-name>
+  	<description></description>
+  	<servlet-class>main.java.servlet.Firebase02</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Firebase03</servlet-name>
+  	<display-name>Firebase03</display-name>
+  	<description></description>
+  	<servlet-class>main.java.servlet.Firebase03</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Firebase04</servlet-name>
+  	<display-name>Firebase04</display-name>
+  	<description></description>
+  	<servlet-class>main.java.servlet.Firebase04</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Firebase05</servlet-name>
+  	<display-name>Firebase05</display-name>
+  	<description></description>
+  	<servlet-class>main.java.servlet.Firebase05</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Firebase06</servlet-name>
+  	<display-name>Firebase06</display-name>
+  	<description></description>
+  	<servlet-class>main.java.servlet.Firebase06</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>Firebase07</servlet-name>
+  	<display-name>Firebase07</display-name>
+  	<description></description>
+  	<servlet-class>main.java.servlet.Firebase07</servlet-class>
+  </servlet>
   <servlet-mapping>
   	<servlet-name>Firebase01</servlet-name>
   	<url-pattern>/FirebaseTeam01/*</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Firebase02</servlet-name>
+  	<url-pattern>/Firebase02</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Firebase03</servlet-name>
+  	<url-pattern>/Firebase03</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Firebase04</servlet-name>
+  	<url-pattern>/Firebase04</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Firebase05</servlet-name>
+  	<url-pattern>/Firebase05</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Firebase06</servlet-name>
+  	<url-pattern>/Firebase06</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>Firebase07</servlet-name>
+  	<url-pattern>/Firebase07</url-pattern>
   </servlet-mapping>
 </web-app>

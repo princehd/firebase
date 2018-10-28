@@ -17,15 +17,15 @@ import main.java.net.thegreshams.firebase4j.model.FirebaseResponse;
 import main.java.net.thegreshams.firebase4j.service.Firebase;
 import main.java.net.thegreshams.firebase4j.util.JacksonUtility;
 
-@WebServlet("/Firebase01/*")
-public class Firebase01 extends HttpServlet {
+@WebServlet("/Firebase04/*")
+public class Firebase04 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private Firebase firebase;
 	private FirebaseResponse firebaseRes;
 	private String contextPathTeam01;
 	private String reqURI;
-	private String firebase_baseUrl = ""; // 林家涝仿
-	private String path = "/Firebase01";
+	private String firebase_baseUrl =  ""; // 林家涝仿
+	private String path = "/Firebase04";
 	private String URI;
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		setting(request);

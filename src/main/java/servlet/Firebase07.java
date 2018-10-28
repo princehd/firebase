@@ -17,16 +17,16 @@ import main.java.net.thegreshams.firebase4j.model.FirebaseResponse;
 import main.java.net.thegreshams.firebase4j.service.Firebase;
 import main.java.net.thegreshams.firebase4j.util.JacksonUtility;
 
-@WebServlet("/Firebase01/*")
-public class Firebase01 extends HttpServlet {
+@WebServlet("/Firebase07/*")
+public class Firebase07 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	private Firebase firebase;
 	private FirebaseResponse firebaseRes;
 	private String contextPathTeam01;
 	private String reqURI;
-	private String firebase_baseUrl = ""; // 주소입력
-	private String path = "/Firebase01";
 	private String URI;
+	private String firebase_baseUrl = "https://arduinotest-36fe5.firebaseio.com/";
+	private String path = "/Firebase07";
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		setting(request);
 		
@@ -47,8 +47,7 @@ public class Firebase01 extends HttpServlet {
 		URI = request.getRequestURI();
 		if(URI.length() == contextPathTeam01.length()) URI = "";
 		else reqURI = URI.substring(contextPathTeam01.length()+1);
-		System.out.println(reqURI);
-		
+		System.out.println(reqURI);	
 		
 		try {
 			firebase = new Firebase( firebase_baseUrl );
