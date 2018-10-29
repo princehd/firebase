@@ -24,7 +24,7 @@ public class Firebase01 extends HttpServlet {
 	private FirebaseResponse firebaseRes;
 	private String contextPathTeam01;
 	private String reqURI;
-	private String firebase_baseUrl = ""; // 林家涝仿
+	private String firebase_baseUrl = "https://first-test-1214.firebaseio.com/"; // 林家涝仿
 	private String path = "/Firebase01";
 	private String URI;
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
